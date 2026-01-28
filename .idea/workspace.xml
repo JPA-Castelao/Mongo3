@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15b9fd05-d501-4175-a790-32acccde13cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/repository/ActorRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/service/PeliculaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="15b9fd05-d501-4175-a790-32acccde13cf" name="Changes" comment="sasdfsdf">
+      <change afterPath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/service/ActorService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/controller/RestActores.java" beforeDir="false" afterPath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/controller/RestActores.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/repository/ActorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/repository/ActorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/repository/PeliculaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/repository/PeliculaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/service/PeliculaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/service/PeliculaService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +58,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/dam/ad/Mongo/chamadaPostgresDendeMongo/PostgresMongo",
+    "last_opened_file_path": "/home/dam/ad/Mongo3",
     "onboarding.tips.debug.path": "E:/DAM/ad/Mongo3/MongoChamador/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -107,6 +109,15 @@
       <option name="presentableId" value="Default" />
       <updated>1769166742335</updated>
     </task>
+    <task id="LOCAL-00001" summary="sasdfsdf">
+      <option name="closed" value="true" />
+      <created>1769521519862</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1769521519862</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -119,5 +130,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="sasdfsdf" />
+    <option name="LAST_COMMIT_MESSAGE" value="sasdfsdf" />
   </component>
 </project>

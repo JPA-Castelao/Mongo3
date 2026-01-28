@@ -1,6 +1,7 @@
 package org.example.service;
 
 
+import org.example.model.Actor;
 import org.example.model.Pelicula;
 import org.example.repository.PeliculaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,5 +37,10 @@ public class PeliculaService {
     public List<Pelicula> obterPeliculaTitulo(String titulo) {
         return peliculaRepository.findByTitulo(titulo);
     }
+
+    public List<Actor> obterActoresPelicula() {
+        return peliculaRepository.obtenerActores();
+    }
+
 
 }
