@@ -2,6 +2,7 @@ package org.example.service;
 
 import org.example.model.Actor;
 import org.example.repository.ActorRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -12,13 +13,14 @@ public class ActorService {
 
     private final ActorRepository actorRepository;
 
+    @Autowired
     public ActorService(ActorRepository ac) {
         this.actorRepository = ac;
     }
 
     //create
-    public void crearActor(Actor ac) {
-        actorRepository.save(ac);
+    public Actor crearActor(Actor ac) {
+        return actorRepository.save(ac);
     }
 
     //listar todos

@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class PeliculaService {
@@ -17,6 +18,10 @@ public class PeliculaService {
     @Autowired
     public PeliculaService(PeliculaRepository peliculaRepository) {
         this.peliculaRepository = peliculaRepository;
+    }
+
+    public Optional<Pelicula> findById(Long id) {
+        return peliculaRepository.findById(id);
     }
 
     public Pelicula save(Pelicula pelicula) {

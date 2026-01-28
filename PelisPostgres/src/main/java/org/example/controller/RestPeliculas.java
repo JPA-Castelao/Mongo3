@@ -9,4 +9,6 @@ public class RestPeliculas {
 
 
     public static String MAPPING = "postgres/RestPeliculas";
+
+
 }

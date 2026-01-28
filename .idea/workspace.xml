@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15b9fd05-d501-4175-a790-32acccde13cf" name="Changes" comment="sasdfsdf">
-      <change afterPath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/service/ActorService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/controller/RestActores.java" beforeDir="false" afterPath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/controller/RestActores.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/repository/ActorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/repository/ActorRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/repository/PeliculaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/repository/PeliculaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/controller/RestPeliculas.java" beforeDir="false" afterPath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/controller/RestPeliculas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/service/ActorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/service/ActorService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/service/PeliculaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/service/PeliculaService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,24 +47,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/dam/ad/Mongo3",
-    "onboarding.tips.debug.path": "E:/DAM/ad/Mongo3/MongoChamador/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/dam/ad/Mongo3&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;E:/DAM/ad/Mongo3/MongoChamador/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\DAM\ad\Mongo3\PelisPostgres\src\main\java\org\example\model" />
