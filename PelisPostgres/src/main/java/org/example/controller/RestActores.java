@@ -15,7 +15,7 @@ import java.util.List;
 public class RestActores {
 
 
-    public static final String MAPPING = "postgres/actores";
+    public static final String MAPPING = "probas/actores";
     @Autowired
     private ActorService actorService;
     @Autowired
@@ -23,17 +23,14 @@ public class RestActores {
 
     @GetMapping
     public List<Actor> getAll() {
-        return actorService.listarActores();
+        return actorService.findAll();
     }
 
     @GetMapping("/{id}")
-
     public ResponseEntity<Actor> getById(@PathVariable Long id) {
-
-        return actorService.buscarActorPorId(id)
+        return actorService.findById(id)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
-
     }
 
 
@@ -56,12 +53,33 @@ public class RestActores {
     public ResponseEntity<Actor> update(@PathVariable Long id, @RequestBody Actor actor) {
 
 
-        return actorService.buscarActorPorId(id)
+        return actorService.findById(id)
                 .map(x -> {
+                    x.setIdActor(actor.getIdActor());
+                    x.setNome(actor.getNome());
+                    x.setApelidos(actor.getApelidos());
+                    x.setNacionalidade(actor.getNacionalidade());
+                    if (actor.getId_pelicula() != null) {
+                        x.setId_pelicula(actor.getId_pelicula());
+                    }
 
+                    return ResponseEntity.ok(actorService.crearActor(x));
 
                 }).orElse(ResponseEntity.notFound().build());
 
 
     }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> delete(@PathVariable Long id) {
+        if (!actorService.existsById(id)) {
+            return ResponseEntity.notFound().build();
+
+        }
+        actorService.deleteById(id);
+        return ResponseEntity.noContent().build();
+
+
+    }
+
 }

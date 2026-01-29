@@ -1,30 +1,48 @@
 package org.example.model;
 
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
-import org.springframework.data.annotation.Id;
+
+
+import java.util.List;
 
 @Entity
-@Table(name = "equipos")
+@Table(name = "peliculas")
 public class Pelicula {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idpelicula")
-    Long idPelicula;
-
-    String titulo;
-    String xenero;
-
+    private Long id;
+    @Column(name = "titulo")
+    private String titulo;
+    @Column(name = "xenero")
+    private String xenero;
+    @Column(name = "ano")
     int ano;
+    @OneToMany(mappedBy = "pelicula", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    @JsonManagedReference
+    @Column(name = "actor")
+    private List<Actor> actor;
 
+    public Pelicula() {
+    }
+
+    public List<Actor> getActor() {
+        return actor;
+    }
+
+    public void setActor(List<Actor> actor) {
+        this.actor = actor;
+    }
 
     public Long getIdPelicula() {
-        return idPelicula;
+        return id;
     }
 
     public void setIdPelicula(Long idPelicula) {
-        this.idPelicula = idPelicula;
+        this.id = idPelicula;
     }
 
     public String getTitulo() {

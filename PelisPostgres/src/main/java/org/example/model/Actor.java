@@ -9,16 +9,17 @@ public class Actor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idactor")
-    Long idActor;
-    String nome;
-    String apelidos;
-    String nacionalidade;
-    @Column(name = "id_pelicula")
+    private Long idActor;
+    private String nome;
+    private String apelidos;
+    private String nacionalidade;
     @ManyToOne
     @JoinColumn(name = "idpelicula")
     @JsonBackReference
-    Pelicula id_pelicula;
+    private Pelicula pelicula;
 
+    public Actor() {
+    }
 
     public Long getIdActor() {
         return idActor;
@@ -53,10 +54,10 @@ public class Actor {
     }
 
     public Pelicula getId_pelicula() {
-        return id_pelicula;
+        return pelicula;
     }
 
     public void setId_pelicula(Pelicula id_pelicula) {
-        this.id_pelicula = id_pelicula;
+        this.pelicula = id_pelicula;
     }
 }

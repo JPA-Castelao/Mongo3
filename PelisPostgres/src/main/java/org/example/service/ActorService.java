@@ -2,7 +2,6 @@ package org.example.service;
 
 import org.example.model.Actor;
 import org.example.repository.ActorRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -13,7 +12,6 @@ public class ActorService {
 
     private final ActorRepository actorRepository;
 
-    @Autowired
     public ActorService(ActorRepository ac) {
         this.actorRepository = ac;
     }
@@ -24,18 +22,24 @@ public class ActorService {
     }
 
     //listar todos
-    public List<Actor> listarActores() {
+    public List<Actor> findAll() {
         return actorRepository.findAll();
     }
 
     //listar
-    public Optional<Actor> buscarActorPorId(Long id) {
+    public Optional<Actor> findById(Long id) {
         return actorRepository.findById(id);
     }
 
     //borrar
-    public void borrarActorPorId(Long id) {
+    public void deleteById(Long id) {
         actorRepository.deleteById(id);
+    }
+
+
+    //exists
+    public boolean existsById(Long id) {
+        return actorRepository.existsById(id);
     }
 
 }

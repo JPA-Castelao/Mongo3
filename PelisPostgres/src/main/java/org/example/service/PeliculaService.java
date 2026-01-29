@@ -1,7 +1,6 @@
 package org.example.service;
 
 
-import org.example.model.Actor;
 import org.example.model.Pelicula;
 import org.example.repository.PeliculaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,9 +19,6 @@ public class PeliculaService {
         this.peliculaRepository = peliculaRepository;
     }
 
-    public Optional<Pelicula> findById(Long id) {
-        return peliculaRepository.findById(id);
-    }
 
     public Pelicula save(Pelicula pelicula) {
 
@@ -34,18 +30,23 @@ public class PeliculaService {
         return peliculaRepository.existsById(id);
     }
 
-    public void delete(Long id) {
-        peliculaRepository.deleteById(id);
-    }
-
-
     public List<Pelicula> obterPeliculaTitulo(String titulo) {
         return peliculaRepository.findByTitulo(titulo);
     }
 
-    public List<Actor> obterActoresPelicula() {
-        return peliculaRepository.obtenerActores();
+    public List<Pelicula> obterPeliculaXenero(String xenero) {
+        return peliculaRepository.findByXenero(xenero);
     }
 
+    public void delete(Long id) {
+        peliculaRepository.deleteById(id);
+    }
+
+    public Optional<Pelicula> findById(Long id) {
+        return peliculaRepository.findById(id);
+    }
+    public List<Pelicula> obterToasPeliculas() {
+        return peliculaRepository.findAll();
+    }
 
 }
