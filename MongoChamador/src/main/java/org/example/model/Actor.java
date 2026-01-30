@@ -1,14 +1,22 @@
 package org.example.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
+
 public class Actor {
 
 
-    Long idActor;
-    String nome;
-    String apelidos;
-    String nacionalidade;
-    Pelicula id_pelicula;
+    private Long idActor;
+    private String nome;
+    private String apellidos;
+    private String nacionalidade;
+    @JsonProperty("idpelicula")
+    private Pelicula idpelicula;
 
+    public Actor() {
+    }
 
     public Long getIdActor() {
         return idActor;
@@ -27,11 +35,11 @@ public class Actor {
     }
 
     public String getApelidos() {
-        return apelidos;
+        return apellidos;
     }
 
     public void setApelidos(String apelidos) {
-        this.apelidos = apelidos;
+        this.apellidos = apelidos;
     }
 
     public String getNacionalidade() {
@@ -43,10 +51,10 @@ public class Actor {
     }
 
     public Pelicula getId_pelicula() {
-        return id_pelicula;
+        return idpelicula;
     }
 
     public void setId_pelicula(Pelicula id_pelicula) {
-        this.id_pelicula = id_pelicula;
+        this.idpelicula = id_pelicula;
     }
 }

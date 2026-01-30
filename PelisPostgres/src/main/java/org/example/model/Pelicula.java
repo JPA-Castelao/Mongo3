@@ -2,8 +2,8 @@ package org.example.model;
 
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
-
 
 import java.util.List;
 
@@ -14,6 +14,7 @@ public class Pelicula {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idpelicula")
+    @Schema(accessMode = Schema.AccessMode.READ_ONLY)
     private Long id;
     @Column(name = "titulo")
     private String titulo;
@@ -23,7 +24,6 @@ public class Pelicula {
     int ano;
     @OneToMany(mappedBy = "pelicula", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     @JsonManagedReference
-    @Column(name = "actor")
     private List<Actor> actor;
 
     public Pelicula() {
@@ -37,6 +37,7 @@ public class Pelicula {
         this.actor = actor;
     }
 
+    @Schema(accessMode = Schema.AccessMode.READ_ONLY)
     public Long getIdPelicula() {
         return id;
     }
@@ -44,6 +45,7 @@ public class Pelicula {
     public void setIdPelicula(Long idPelicula) {
         this.id = idPelicula;
     }
+
 
     public String getTitulo() {
         return titulo;

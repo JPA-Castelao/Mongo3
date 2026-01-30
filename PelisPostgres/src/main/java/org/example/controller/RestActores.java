@@ -1,5 +1,6 @@
 package org.example.controller;
 
+import io.swagger.v3.oas.annotations.Operation;
 import org.example.model.Actor;
 import org.example.model.Pelicula;
 import org.example.service.ActorService;
@@ -20,11 +21,13 @@ public class RestActores {
     private ActorService actorService;
     @Autowired
     private PeliculaService peliculaService;
+    @Operation(summary = "Listar")
 
     @GetMapping
     public List<Actor> getAll() {
         return actorService.findAll();
     }
+    @Operation(summary = "Buscar por Id")
 
     @GetMapping("/{id}")
     public ResponseEntity<Actor> getById(@PathVariable Long id) {
@@ -33,43 +36,39 @@ public class RestActores {
                 .orElse(ResponseEntity.notFound().build());
     }
 
+    @Operation(summary = "Crear")
 
     @PostMapping
     public ResponseEntity<Actor> create(@RequestBody Actor actor) {
-        if (actor.getId_pelicula() != null) {
-            Pelicula pid = peliculaService.findById(actor.getId_pelicula().getIdPelicula())
+        if (actor.getPelicula() != null) {
+            Pelicula pid = peliculaService.findById(actor.getPelicula().getIdPelicula())
                     .orElse(null);
             if (pid == null) {
                 return ResponseEntity.badRequest().build();
             }
-            actor.setId_pelicula(pid);
+            actor.setPelicula(pid);
         }
 
         Actor guardado = actorService.crearActor(actor);
         return ResponseEntity.ok(guardado);
     }
-
+    @Operation(summary = "Actualizar")
     @PutMapping("/{id}")
     public ResponseEntity<Actor> update(@PathVariable Long id, @RequestBody Actor actor) {
 
-
         return actorService.findById(id)
                 .map(x -> {
-                    x.setIdActor(actor.getIdActor());
                     x.setNome(actor.getNome());
                     x.setApelidos(actor.getApelidos());
                     x.setNacionalidade(actor.getNacionalidade());
-                    if (actor.getId_pelicula() != null) {
-                        x.setId_pelicula(actor.getId_pelicula());
+                    if (actor.getPelicula() != null) {
+                        x.setPelicula(actor.getPelicula());
                     }
-
                     return ResponseEntity.ok(actorService.crearActor(x));
-
                 }).orElse(ResponseEntity.notFound().build());
-
-
     }
 
+    @Operation(summary = "Borrar")
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> delete(@PathVariable Long id) {
         if (!actorService.existsById(id)) {

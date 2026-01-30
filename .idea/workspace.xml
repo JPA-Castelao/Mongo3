@@ -5,16 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15b9fd05-d501-4175-a790-32acccde13cf" name="Changes" comment="sasdfsdf">
+      <change afterPath="$PROJECT_DIR$/MongoChamador/src/main/java/org/example/config/MongoConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MongoChamador/src/main/java/org/example/repository/ActorRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MongoChamador/src/main/java/org/example/repository/PeliculaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MongoChamador/src/main/java/org/example/service/PeliculaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MongoChamador/src/main/json.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/config/OpenApiConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/config/OpenApiConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MongoChamador/src/main/java/org/example/Secuencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/MongoChamador/src/main/java/org/example/Secuencia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MongoChamador/src/main/java/org/example/model/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/MongoChamador/src/main/java/org/example/model/Actor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MongoChamador/src/main/java/org/example/model/Pelicula.java" beforeDir="false" afterPath="$PROJECT_DIR$/MongoChamador/src/main/java/org/example/model/Pelicula.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MongoChamador/src/main/java/org/example/service/ConexionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/MongoChamador/src/main/java/org/example/service/ConexionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MongoChamador/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/MongoChamador/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MongoChamador/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/MongoChamador/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MongoChamador/target/classes/org/example/Secuencia.class" beforeDir="false" afterPath="$PROJECT_DIR$/MongoChamador/target/classes/org/example/Secuencia.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MongoChamador/target/classes/org/example/model/Actor.class" beforeDir="false" afterPath="$PROJECT_DIR$/MongoChamador/target/classes/org/example/model/Actor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MongoChamador/target/classes/org/example/model/Pelicula.class" beforeDir="false" afterPath="$PROJECT_DIR$/MongoChamador/target/classes/org/example/model/Pelicula.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MongoChamador/target/classes/org/example/service/ConexionService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/MongoChamador/target/classes/org/example/service/ConexionService$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MongoChamador/target/classes/org/example/service/ConexionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/MongoChamador/target/classes/org/example/service/ConexionService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/controller/RestActores.java" beforeDir="false" afterPath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/controller/RestActores.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/controller/RestPeliculas.java" beforeDir="false" afterPath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/controller/RestPeliculas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/model/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/model/Actor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/model/Pelicula.java" beforeDir="false" afterPath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/model/Pelicula.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/repository/ActorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/repository/ActorRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/repository/PeliculaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/repository/PeliculaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/service/ActorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/service/ActorService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/service/PeliculaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/PelisPostgres/src/main/java/org/example/service/PeliculaService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PelisPostgres/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/PelisPostgres/src/main/resources/application.properties" afterDir="false" />
     </list>
@@ -43,7 +55,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/JPA-Castelao/Mongo3.git&quot;,
-    &quot;accountId&quot;: &quot;cc1fbeb3-238f-45f5-a155-1eceb77303a9&quot;
+    &quot;accountId&quot;: &quot;8c2b6cfe-87b9-4cc8-ab8a-c48656baadbc&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -65,7 +77,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/dam/ad/MongoDB/MongoExemplosEnlaceDatos",
+    "last_opened_file_path": "E:/DAM/ad/Mongo3/MongoChamador/src/main/java/org/example/repository",
     "onboarding.tips.debug.path": "E:/DAM/ad/Mongo3/MongoChamador/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -75,24 +87,23 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\DAM\ad\Mongo3\MongoChamador\src\main\java\org\example\repository" />
       <recent name="E:\DAM\ad\Mongo3\PelisPostgres\src\main\java\org\example\model" />
       <recent name="E:\DAM\ad\Mongo3\MongoChamador\src\main\java\org\example" />
       <recent name="E:\DAM\ad\Mongo3\PelisPostgres\src\main\resources" />
       <recent name="E:\DAM\ad\Mongo3\MongoChamador\src\main\resources" />
-      <recent name="E:\DAM\ad\Mongo3\MongoChamador" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\DAM\ad\Mongo3\PelisPostgres" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="org.example" />
       <recent name="org.example.config" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main (1)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
-      <module name="postgresEquiposXogadores" />
+      <module name="PelisPostgres" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.*" />
@@ -122,6 +133,13 @@
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.26199.169" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

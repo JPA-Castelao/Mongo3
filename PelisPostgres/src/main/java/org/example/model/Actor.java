@@ -1,6 +1,7 @@
 package org.example.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
 
 @Entity
@@ -9,13 +10,15 @@ public class Actor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idactor")
+    @Schema(accessMode = Schema.AccessMode.READ_ONLY)
     private Long idActor;
     private String nome;
     private String apelidos;
     private String nacionalidade;
     @ManyToOne
-    @JoinColumn(name = "idpelicula")
+    @JoinColumn(name = "id_pelicula")
     @JsonBackReference
+    @Schema(accessMode = Schema.AccessMode.READ_ONLY)
     private Pelicula pelicula;
 
     public Actor() {
@@ -53,11 +56,11 @@ public class Actor {
         this.nacionalidade = nacionalidade;
     }
 
-    public Pelicula getId_pelicula() {
+    public Pelicula getPelicula() {
         return pelicula;
     }
 
-    public void setId_pelicula(Pelicula id_pelicula) {
-        this.pelicula = id_pelicula;
+    public void setPelicula(Pelicula pelicula) {
+        this.pelicula = pelicula;
     }
 }

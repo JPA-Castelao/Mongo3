@@ -30,13 +30,10 @@ public class PeliculaService {
         return peliculaRepository.existsById(id);
     }
 
-    public List<Pelicula> obterPeliculaTitulo(String titulo) {
+    public Optional<Pelicula> obterPeliculaTitulo(String titulo) {
         return peliculaRepository.findByTitulo(titulo);
     }
 
-    public List<Pelicula> obterPeliculaXenero(String xenero) {
-        return peliculaRepository.findByXenero(xenero);
-    }
 
     public void delete(Long id) {
         peliculaRepository.deleteById(id);
@@ -45,6 +42,7 @@ public class PeliculaService {
     public Optional<Pelicula> findById(Long id) {
         return peliculaRepository.findById(id);
     }
+
     public List<Pelicula> obterToasPeliculas() {
         return peliculaRepository.findAll();
     }
